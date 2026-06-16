@@ -593,3 +593,20 @@ a { text-decoration: none; color: inherit; }
   display: block;
   margin-bottom: 8px;
 }
+
+/* Force portrait images upright */
+.gallery-item img {
+  transform: rotate(0deg);
+}
+
+/* Nav brand text */
+.nav-brand-text {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  margin-left: 12px;
+}
+@media (max-width: 700px) {
+  .nav-brand-text { display: none; }
+}
